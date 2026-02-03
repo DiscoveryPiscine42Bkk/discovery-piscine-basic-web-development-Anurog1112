@@ -1,1 +1,1 @@
-ls | stat
+ls | wc -l
