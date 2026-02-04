@@ -23,13 +23,13 @@ function shrinkBalloon() {
 
     if (size > 200) {
         size -= 5;
+
+        colorIndex--;
+        if (colorIndex < 0) {
+            colorIndex = 2;
+        }
     }
 
-    colorIndex--;
-    if (colors < 0) {
-        colorIndex = 2;
-    }
-    
     updateBalloon();
 }
 
