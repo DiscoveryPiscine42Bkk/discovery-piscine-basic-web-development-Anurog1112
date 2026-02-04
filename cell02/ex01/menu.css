@@ -7,6 +7,7 @@
     padding-top: 50px;
 }
 
+/* ตัวกล่องเมนู */
 .sandwich-menu{
     list-style: none;
     padding: 0;
@@ -17,6 +18,7 @@
     position: relative;
     display: inline-block;
 
+    /* ตกแต่งปุ่มหลัก */
     background-color: #333;
     color: white;
     padding:  15px 30px;
@@ -25,10 +27,12 @@
     transition: background-color 0.3s;
 }
 
+/* ปลี่ยนสีปุ่มหลักตอนเอาเมาส์ชี้ */
 .sandwich-menu li:hover {
     background-color: #555;
 }
 
+/* ตัวไส้ที่ซ่อนอยู่ */
 .fillings {
 display: none;
     position: absolute;
@@ -43,10 +47,12 @@ display: none;
     z-index: 100;
 }
 
+/* สั่งให้แสดงเมื่อ Hover ตัวแม่ */
 .sandwich-menu li:hover .fillings {
     display: block;
 }
 
+/* รายการย่อยแต่ละบรรทัด */
 .fillings li {
     display: block;
     background-color: white;
@@ -59,10 +65,12 @@ display: none;
     box-sizing: border-box;
 }
 
+/* ลบเส้นขีดคั่นอันสุดท้ายออก (เพื่อความเนียน) */
 .fillings li:last-child {
     border-bottom: none;
 }
 
+/* เปลี่ยนสีรายการย่อยตอนเอาเมาส์ชี้ (Highlight) */
 .fillings li:hover {
     background-color: #ff9800;
     color: white;
