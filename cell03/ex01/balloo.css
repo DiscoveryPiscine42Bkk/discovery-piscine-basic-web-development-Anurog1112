@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    /* ให้ลูกโป่งอยู่กลางจอ*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#balloon {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    /* เพิ่มให้การเปลี่ยนสี/ขนาด ดูนุ่มนวกขึ้น*/
+    transition: all 0.2s;
+}
